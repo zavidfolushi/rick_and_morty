@@ -1,0 +1,14 @@
+
+.loader{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    &>path{
+        fill: #05ff05;
+        stroke: transparent;
+    }
+    &>g{
+        fill: #05ff05;
+        stroke: transparent;
+    }
+}
