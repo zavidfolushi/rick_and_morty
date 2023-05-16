@@ -40,7 +40,7 @@ const EpisodeDetailPage = () => {
                     {episodeData?.characters?.map((character) => {
                         character = character as ICharacter;
                         return (
-                            <CharacterCard character={character} />
+                            <CharacterCard key={character.id} character={character} />
                         )
                     })}
                 </div>

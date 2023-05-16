@@ -41,9 +41,9 @@ const CharactersDetailPage = () => {
                 <div className="grid auto-rows-max grid-cols-5 gap-6">
                     {characterData?.episode?.map((episode) => {
                         episode = episode as IEpisode;
-                        console.log(episode)
+
                         return (
-                            <EpisodeCard episode={episode} />
+                            <EpisodeCard key={episode.id} episode={episode} />
                         )
                     })}
                 </div>
